@@ -21,5 +21,10 @@ void Train(NN& nn)
 
 int main()
 {
+	NN nn(2, 4, 1);
+	Train(nn);
+
+	std::cout << "Predict " << nn.predict({ 0.0, 1.0 })[0] << "\n";
+
 	std::cin.get();
 }
