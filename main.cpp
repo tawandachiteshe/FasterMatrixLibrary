@@ -22,6 +22,9 @@ void Train(NN& nn)
 int main()
 {
 	NN nn(2, 4, 1);
+
+	std::cout << "Training.... to Solve xor problem\n";
+
 	Train(nn);
 
 	std::cout << "Predict " << nn.predict({ 0.0, 1.0 })[0] << "\n";
