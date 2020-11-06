@@ -17,4 +17,9 @@ for ( unsigned int = 0; i < NUM_OF_ITERATIONS; i++)
     // continue the process for all the required data
 }
 
+// nn.predict returns std::vector<double>
+auto& output = nn.predict({ 1.0, 1.0f });
+
+std::cout << "Desired output prediction " << output[0] << "\n" ; 
+
 ```
