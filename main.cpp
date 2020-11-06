@@ -8,6 +8,8 @@
 
 void Train(NN& nn)
 {
+
+	int count = 50;
 	
 	for (int i = 0; i < 4000; i++)
 	{
@@ -17,8 +19,12 @@ void Train(NN& nn)
 		nn.train({ 1.0, 1.0 }, { 0.0 });
 		nn.train({ 0.0, 0.0 }, { 0.0 });
 
-		std::cout << "Solving Xor problem in progress.... " << progress << "% \n \n";
-	
+		count--;
+
+		if (count == 0) {
+			std::cout << "Solving Xor problem in progress.... " << progress << "% \n \n";
+			count = 50;
+		}
 	}
 }
 
