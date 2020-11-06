@@ -1,7 +1,9 @@
 # FasterMatrixLibrary
 
 ## How to build
-- CMAKE 3.10
+- ##### CMAKE 3.10
+- ##### CPP11
+- ##### only MSVC or gnu c++ compiler where tested
 
 ### Api usage for the Matrix Library
 
