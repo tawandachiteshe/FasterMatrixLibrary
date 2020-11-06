@@ -3,7 +3,33 @@
 ## How to build
 - CMAKE 3.10
 
-### Api usage
+### Api usage for the Matrix Library
+
+```cpp
+
+Matrix mat ( \* num of rows *\ 2, \* num of columns *\ 2);
+
+//sets all the elements to one
+mat.ones();
+
+//maps all the elements to a function
+mat.map([](auto num){ return std::sin(num); });
+//dot product
+Matrix dot = mat * mat;
+
+//add
+Matrix dot = mat + mat;
+
+//subtration
+Matrix dot = mat - mat;
+
+//scalar multiplication
+Matrix dot = mat * 2.0;
+
+
+```
+
+### Api usage for the Neural Network
 
 ```cpp
 
